@@ -4,6 +4,7 @@ import FeaturedCard from '../shared/FeaturedCard';
 
 export default function Featured() {
     const [items, setItems] = useState([]);
+    const pagination = [1, 2, 3, 4];
 
     useEffect(() => {
         const fetchItem = async () => {
@@ -16,9 +17,9 @@ export default function Featured() {
     console.log(items)
     return (
         <div>
-            <div className='max-w-7xl mx-auto py-32'>
+            <div className='max-w-7xl mx-auto py-32 px-4 lg:px-0'>
                 {/* heading */}
-                <div className='flex justify-between items-center'>
+                <div className='md:flex justify-between items-center'>
                     <SideHeading
                         title="Discover Our Featured Listings"
                         subtitle="Aliquam lacinia diam quis lacus euismod"
@@ -28,11 +29,15 @@ export default function Featured() {
                     </div>
                 </div>
                 {/* content */}
-                <div className='grid grid-cols-3 gap-8 mt-10'>
-                    {items.map(item=> <FeaturedCard
-                    key={item.id}
-                    item={item}
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10'>
+                    {items.map(item => <FeaturedCard
+                        key={item.id}
+                        item={item}
                     />)}
+                </div>
+                <div className='flex gap-2 mt-12 w-fit mx-auto'>
+                    <div className='w-2 h-2 rounded-full bg-neutral-900'></div>
+                    {pagination.map((page, idx) => <div key={idx} className='w-2 h-2 rounded-full bg-neutral-400'></div>)}
                 </div>
             </div>
         </div>

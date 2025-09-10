@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SearchBar() {
     return (
-        <div className='max-w-7xl mx-auto shadow-xl rounded-lg -mt-28 z-20 relative'>
+        <div className='max-w-7xl mx-auto shadow-xl rounded-lg -mt-28 z-20 relative px-4 lg:px-0'>
             {/* tab */}
             <div className='rounded-t-xl flex w-fit overflow-hidden bg-white'>
                 <h1 className='px-6 py-3 mx-2 border-b-2 bg-white'>All</h1>

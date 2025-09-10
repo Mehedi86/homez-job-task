@@ -1,5 +1,6 @@
 
 import './App.css'
+import ExploreApartment from './components/content/ExploreApartment'
 import Featured from './components/content/Featured'
 import Banner from './components/header/Banner'
 import Navbar from './components/header/Navbar'
@@ -12,6 +13,7 @@ function App() {
       <Banner/>
       <SearchBar/>
       <Featured/>
+      <ExploreApartment/>
     </div>
   )
 }

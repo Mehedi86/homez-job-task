@@ -19,7 +19,7 @@ export default function Navbar() {
     return (
         <div className="fixed top-0 left-0 w-full px-4 h-[76px] flex items-center z-50 bg-transparent">
             <nav className="flex justify-between items-center w-full max-w-[1200px] mx-auto">
-                <div className="flex items-center gap-12">
+                <div className="flex items-center gap-6 xl:gap-12">
                     {/* logo */}
                     <div>
                         <img src="/images/logo.png" alt="Logo" className="h-10" />
@@ -27,8 +27,8 @@ export default function Navbar() {
 
                     {/* desktop nav */}
                     <div className="hidden lg:flex items-center space-x-14 text-white font-semibold">
-                        <div className="flex space-x-10">{navItem()}</div>
-                        <div className="flex items-center gap-6 mr-12">
+                        <div className="flex space-x-6 xl:space-x-10">{navItem()}</div>
+                        <div className="flex items-center gap-6 xl:mr-12">
                             <div className="flex items-center gap-2">
                                 <img src="/images/user-logo.png" alt="" className="h-6" />
                                 <p>
