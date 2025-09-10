@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function SearchBar() {
     return (
-        <div className='max-w-7xl mx-auto my-20 shadow-2xl rounded-lg -mt-28 z-20 relative'>
+        <div className='max-w-7xl mx-auto shadow-xl rounded-lg -mt-28 z-20 relative'>
             {/* tab */}
             <div className='rounded-t-xl flex w-fit overflow-hidden bg-white'>
-                <h1 className='px-4 py-3 mx-2 border-b-2 bg-white'>All</h1>
-                <h1 className='px-4 py-3 bg-gray-100'>For Sale</h1>
-                <h1 className='px-4 py-3 bg-gray-100'>Rent</h1>
+                <h1 className='px-6 py-3 mx-2 border-b-2 bg-white'>All</h1>
+                <h1 className='px-6 py-3 bg-gray-100'>For Sale</h1>
+                <h1 className='px-6 py-3 bg-gray-100'>Rent</h1>
             </div>
             {/* main div */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 p-6 bg-white rounded-b-lg rounded-tr-lg'>
