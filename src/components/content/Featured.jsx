@@ -23,6 +23,7 @@ export default function Featured() {
                     <SideHeading
                         title="Discover Our Featured Listings"
                         subtitle="Aliquam lacinia diam quis lacus euismod"
+                        colorS="text-[#717171]"
                     />
                     <div>
                         <h1 className='flex items-center gap-2 font-semibold'>See All Properties <img src="/images/arrow.png" alt="" /></h1>
@@ -33,6 +34,7 @@ export default function Featured() {
                     {items.map(item => <FeaturedCard
                         key={item.id}
                         item={item}
+                        coupon={true}
                     />)}
                 </div>
                 <div className='flex gap-2 mt-12 w-fit mx-auto'>

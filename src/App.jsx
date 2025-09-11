@@ -1,6 +1,7 @@
 
 import './App.css'
 import ApartmentTypes from './components/content/ApartmentTypes'
+import BestDeals from './components/content/BestDeals'
 import BuySection from './components/content/BuySection'
 import ExploreApartment from './components/content/ExploreApartment'
 import Featured from './components/content/Featured'
@@ -22,6 +23,7 @@ function App() {
       <ApartmentTypes/>
       <BuySection/>
       <RealtorFeedback/>
+      <BestDeals/>
     </div>
   )
 }

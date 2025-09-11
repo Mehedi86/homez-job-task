@@ -4,32 +4,26 @@
         "title": "House on the Hollywood",
         "image": "/images/featured-1.png",
         "price": "$4,600",
-        "vector": [
-            6,
-            2,
-            20
-        ]
+        "bed": 6,
+        "bath": 2,
+        "area": 200
     },
     {
         "id": "featureddfd",
         "title": "Comfortable Villa Green",
         "image": "/images/featured-2.png",
         "price": "$4,600",
-        "vector": [
-            9,
-            3,
-            600
-        ]
+        "bed": 9,
+        "bath": 3,
+        "area": 600
     },
     {
         "id": "featuredsdfj",
         "title": "Quality House For Sale",
         "image": "/images/featured-3.png",
         "price": "$4,600",
-        "vector": [
-            10,
-            2,
-            500
-        ]
+        "bed": 10,
+        "bath": 2,
+        "area": 500
     }
 ]
