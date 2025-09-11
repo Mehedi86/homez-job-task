@@ -1,5 +1,6 @@
 
 import './App.css'
+import ApartmentTypes from './components/content/ApartmentTypes'
 import ExploreApartment from './components/content/ExploreApartment'
 import Featured from './components/content/Featured'
 import Realtor from './components/content/Realtor'
@@ -16,6 +17,7 @@ function App() {
       <Featured/>
       <ExploreApartment/>
       <Realtor/>
+      <ApartmentTypes/>
     </div>
   )
 }
