@@ -8,6 +8,7 @@ import ExploreApartment from './components/content/ExploreApartment'
 import Featured from './components/content/Featured'
 import Realtor from './components/content/Realtor'
 import RealtorFeedback from './components/content/RealtorFeedback'
+import Footer from './components/footer/Footer'
 import Banner from './components/header/Banner'
 import Navbar from './components/header/Navbar'
 import SearchBar from './components/header/SearchBar'
@@ -26,6 +27,7 @@ function App() {
       <RealtorFeedback/>
       <BestDeals/>
       <Blog/>
+      <Footer/>
     </div>
   )
 }
