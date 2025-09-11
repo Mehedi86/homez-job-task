@@ -1,8 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react"; // hamburger + close icons
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScroll, setIsScroll] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScroll(true)
+            }
+            else {
+                setIsScroll(false)
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
+
 
     const navItem = () => (
         <>
@@ -17,7 +34,9 @@ export default function Navbar() {
     );
 
     return (
-        <div className="fixed top-0 left-0 w-full px-4 h-[76px] flex items-center z-50 bg-transparent">
+        <div className={`fixed top-0 left-0 w-full px-4 h-[76px] flex items-center z-50 transition-colors duration-300 ${
+    isScroll ? "bg-neutral-700" : "bg-transparent"
+  }`}>
             <nav className="flex justify-between items-center w-full max-w-[1200px] mx-auto">
                 <div className="flex items-center gap-6 xl:gap-12">
                     {/* logo */}

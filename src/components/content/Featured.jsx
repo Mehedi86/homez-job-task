@@ -4,8 +4,7 @@ import FeaturedCard from '../shared/FeaturedCard';
 
 export default function Featured() {
     const [items, setItems] = useState([]);
-    const pagination = [1, 2, 3, 4];
-
+    
     useEffect(() => {
         const fetchItem = async () => {
             const res = await fetch('/data/featured.json');
@@ -14,7 +13,8 @@ export default function Featured() {
         }
         fetchItem();
     }, [])
-    console.log(items)
+    
+    const pagination = [1, 2, 3, 4];
     return (
         <div>
             <div className='max-w-7xl mx-auto py-32 px-4 lg:px-0'>

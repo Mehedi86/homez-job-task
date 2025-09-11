@@ -39,23 +39,23 @@ export default function Footer() {
                             <img src="/images/logo.png" alt="Logo" className="h-10" />
                         </div>
                         <div>
-                            <p className='mb-1 text-sm'>Address</p>
+                            <p className='mb-2 text-sm'>Address</p>
                             <h1 className='font-semibold text-sm'>789 Queensberry Street, North Melbourne VIC 3051, Australia.</h1>
                         </div>
                         <div>
-                            <p className='mb-1 text-sm'>Total Free Customer Care</p>
+                            <p className='mb-2 text-sm'>Total Free Customer Care</p>
                             <h1 className='font-semibold text-sm'>+(088) 123 456 789</h1>
                         </div>
                         <div>
-                            <p className='mb-1 text-sm'>Live Support?</p>
+                            <p className='mb-2 text-sm'>Live Support?</p>
                             <h1 className='font-semibold text-sm'>hi@homez.com</h1>
                         </div>
                     </div>
 
                     {/* second column */}
-                    <div className='lg:col-span-2 space-y-4 text-sm text-[#BEBDBD]'>
+                    <div className='lg:col-span-2 space-y-6 text-sm text-[#BEBDBD]'>
                         <p className='font-semibold text-white'>Popular Search</p>
-                        <div className='space-y-2'>
+                        <div className='space-y-4'>
                             <p>Apartment for Sale</p>
                             <p>Apartment for Rent</p>
                             <p>Office for Sale</p>
@@ -64,9 +64,9 @@ export default function Footer() {
                     </div>
 
                     {/* third column */}
-                    <div className='lg:col-span-2 space-y-4 text-sm text-[#BEBDBD]'>
+                    <div className='lg:col-span-3 space-y-6 text-sm text-[#BEBDBD]'>
                         <p className='font-semibold text-white'>Quick Links</p>
-                        <div className='space-y-2'>
+                        <div className='space-y-4'>
                             <p>Terms of Use</p>
                             <p>Privacy Policy</p>
                             <p>Pricing Plans</p>
@@ -78,7 +78,7 @@ export default function Footer() {
                     </div>
 
                     {/* fourth column */}
-                    <div className='lg:col-span-4 space-y-4'>
+                    <div className='lg:col-span-3 space-y-4'>
                         <p className='font-semibold text-white'>Apps</p>
                         <img src="/images/footer/apple.png" alt="Apple Store" className="w-36" />
                         <img src="/images/footer/google.png" alt="Google Play" className="w-36" />
