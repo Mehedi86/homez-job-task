@@ -54,7 +54,7 @@ export default function Blog() {
                                 </div>
                             </div>
                             <div className='flex items-center gap-4'>
-                                <img src="/images/blog/blog-3.png" alt="" />
+                                <img src="/images/blog/blog-4.png" alt="" />
                                 <div className='text-[#717171] space-y-2'>
                                     <p>Houses</p>
                                     <h1 className='text-black font-semibold'>Housing Markets That

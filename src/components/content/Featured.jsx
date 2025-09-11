@@ -15,6 +15,8 @@ export default function Featured() {
     }, [])
     
     const pagination = [1, 2, 3, 4];
+
+    
     return (
         <div>
             <div className='max-w-7xl mx-auto py-32 px-4 lg:px-0'>
