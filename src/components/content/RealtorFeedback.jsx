@@ -45,6 +45,5 @@ export default function RealtorFeedback() {
                 </div>
             </div>
         </div>
-
     )
 }
